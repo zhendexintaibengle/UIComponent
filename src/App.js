@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "@tencent/tea-component/lib/tea.css";
+import './css/component.css'
+import Button from './ui/Button'
+import Form from './ui/Form'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const option = [
+    { label: '姓名', type: 'input' },
+    { label: '年龄', type: 'input' },
+    { label: '婚否', type: 'radio', group: [
+      { value: 'yes', text: '是' }, 
+      { value: 'no', text: '否' },
+    ] },
+    { label: '籍贯', type: 'select', group: [
+      { value: 'sichuan', text: '四川' }, 
+      { value: 'beijing', text: '北京' }, 
+      { value: 'shanghai', text: '上海' }, 
+      { value: 'xianggang', text: '香港' }
+    ] },
+  ]
+
+
+return (
+  <div className="App">
+    <div>
+      Button:
+     </div>
+    <br />
+    <Button type='primary' text="这里显示文字" onClick={() => { console.log(12321331) }} />
+    <br />
+    <hr />
+    <Form option={option} size='m' />
+  </div>
+);
 }
 
 export default App;

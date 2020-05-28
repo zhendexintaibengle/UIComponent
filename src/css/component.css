@@ -1,0 +1,57 @@
+
+.my-button-p{
+    background-color: #006EFF;
+    color: #fff;
+    padding: 0px 15px;
+    height: 30px;
+    cursor: pointer;
+    border: none
+}
+
+.my-button-p:hover{
+    background-color: rgb(0, 99, 230) !important;
+}
+
+.my-button-w{
+    background-color: #fff;
+    color: #000;
+    padding: 0px 15px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.my-button-w:hover{
+    background-color: rgb(245, 245, 245) !important;
+}
+.my-button-disabled{
+    background-color: #fff;
+    color: #ccc;
+    padding: 0px 15px;
+    height: 30px;
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+}
+
+.pay{
+    background-color: orange;
+}
+
+.form{
+    display: flex;
+    padding: 10px 0;
+    height: 30px;
+}
+.form .left{
+    height:20px;
+    min-width:50px;
+    text-align: right;
+    padding: 0 10px;
+}
+
+.form .right{
+    height:20px;
+    min-width:50px;
+    text-align: left;
+    padding: 0 10px;
+}
